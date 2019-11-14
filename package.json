@@ -1,0 +1,34 @@
+{
+  "name": "proofjs",
+  "version": "1.0.0",
+  "description": "支持前端和node的丰富的验证工具",
+  "main": "dist/index.js",
+  "typing": "index.d.ts",
+  "scripts": {
+    "test": "node test/test.js",
+    "build": "tsc --outDir dist src/index.ts",
+    "release": "tsc && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "proof",
+    "validate",
+    "typescript",
+    "nodejs",
+    "tools"
+  ],
+  "author": "zhaoyadong",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.6.2",
+    "ts-node": "^7.0.1",
+    "@types/node": "^12.12.6"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">= 8.9.1"
+  }
+}
