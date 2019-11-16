@@ -1,6 +1,6 @@
 {
   "name": "proofs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "支持前端和node的丰富的验证工具",
   "main": "dist/index.js",
   "typing": "index.d.ts",

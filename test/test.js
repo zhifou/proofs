@@ -1,33 +1,9 @@
-var bns = require('../build/Release/bns.node');
-
-var result = bns.get_service_conf('infinite-sandbox.BML.yq01');
-
-console.log('service info: ', JSON.stringify(JSON.parse(result), null, 4));
-
-result = bns.get_instance_by_service('infinite-sandbox.BML.yq01');
-
-console.log('service info: ', JSON.stringify(result, null, 4));
-
-result = bns.get_instance_list(['infinite-sandbox.BML.yq01', 'group.adp-juping-shows-all.FENGCHAO.all']);
-
-console.log('get_instance_list service info: ', JSON.stringify(result, null, 4));
-
-bns.get_instance_by_service_async('group.adp-juping-shows-all.FENGCHAO.all', function (err, result) {
-    console.log('async service info: ', JSON.stringify(result, null, 4));
-});
-
-bns.get_instance_by_service_async('aaa', function (err, result) {
-    console.log('invalid service info: ', err, result);
-});
-
-bns.get_service_conf_async('group.adp-juping-shows-all.FENGCHAO.all', function (err, result) {
-    console.log('async service conf: ', err, result);
-});
-
-bns.get_service_conf_async('infinite-sandbox.BML.yq01', function (err, result) {
-    console.log('empty service conf: ', err, result);
-});
-
-bns.get_service_conf_async('aaaa', function (err, result) {
-    console.log('invalid service conf: ', err, result);
-});
+var Proof = require('../dist').Proof;
+// console.log(Proof);
+console.log(new Proof().checkUserName('^^^44'));
+console.log(new Proof().checkPassword('Zhedddd.0!'));
+console.log(new Proof().checkMobile('18701239733'));
+console.log(new Proof().checkEmail('atding@163.com'));
+console.log(new Proof().checkIP('222.123.444.333'));
+console.log(new Proof().checkCarNumber('京NFE888'));
+console.log(new Proof().checkIDCard('1202323232132'));
