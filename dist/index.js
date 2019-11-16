@@ -5,7 +5,8 @@ var Proof = /** @class */ (function () {
     }
     Proof.prototype.checkIP = function (value) {
         if (value === void 0) { value = ''; }
-        return value ? true : false;
+        var reg = new RegExp(/(\d+)\.(\d+)\.(\d+)\.(\d+)/g);
+        return reg.test(value);
     };
     return Proof;
 }());
