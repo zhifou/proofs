@@ -1,5 +1,9 @@
 "use strict";
 exports.__esModule = true;
+/**
+ * @file Proof验证类
+ * @author zhaoyadong
+ */
 var Proof = /** @class */ (function () {
     function Proof() {
     }
@@ -47,4 +51,4 @@ var Proof = /** @class */ (function () {
     };
     return Proof;
 }());
-exports.Proof = Proof;
+exports["default"] = Proof;

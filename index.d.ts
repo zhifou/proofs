@@ -6,6 +6,12 @@ interface ProofMethod {
     (message: string): boolean;
 }
 
-export class Proof {
+export default class Proof {
+    checkUserName: ProofMethod;
+    checkPassword: ProofMethod;
     checkIP: ProofMethod;
+    checkEmail: ProofMethod;
+    checkMobile: ProofMethod;
+    checkCarNumber: ProofMethod;
+    checkIDCard: ProofMethod;
 }

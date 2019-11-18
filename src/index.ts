@@ -2,7 +2,7 @@
  * @file Proof验证类
  * @author zhaoyadong
  */
-export class Proof {
+export default class Proof {
     // 检查用户名是否合法，4到16位（字母，数字，下划线，减号）
     checkUserName(value: string = ''): boolean {
         let reg = new RegExp(/^[a-zA-Z0-9_-]{4,16}$/);

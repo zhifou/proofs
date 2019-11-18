@@ -1,5 +1,5 @@
-var Proof = require('../dist').Proof;
-// console.log(Proof);
+var Proof = require('../dist').default;
+console.log(Proof);
 console.log(new Proof().checkUserName('^^^44'));
 console.log(new Proof().checkPassword('Zhedddd.0!'));
 console.log(new Proof().checkMobile('18701239733'));
