@@ -6,4 +6,4 @@ console.log(new Proof().checkMobile('18701239733'));
 console.log(new Proof().checkEmail('atding@163.com'));
 console.log(new Proof().checkIP('222.123.444.333'));
 console.log(new Proof().checkCarNumber('京NFE888'));
-console.log(new Proof().checkIDCard('1202323232132'));
+console.log(new Proof().checkIDCard('330781198509078556'));
