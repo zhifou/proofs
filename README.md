@@ -27,3 +27,19 @@ new Proof().checkCarNumber('京NFE888');
 ```
 new Proof().checkIDCard('330781198509078556');
 ```
+## 验证QQ号码是否合法，非0开头的5至11位数字
+```
+new Proof().checkQQ('3307811981');
+```
+## 验证微信号是否合法，6至20位，以字母开头，字母，数字，减号，下划线
+```
+new Proof().checkWX('wx_3307811981');
+```
+## 验证是否包含中文字符
+```
+new Proof().checkCN('赵1981');
+```
+## 验证邮政编码是否合法
+```
+new Proof().checkPostcode('121981');
+```
